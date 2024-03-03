@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import StoreProvider from "./StoreProvider";
 import PreloaderProvider from "./PreloaderProvider";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const revalidate = 300;
 
@@ -19,7 +20,10 @@ export default async function RootLayout({ children }) {
     <html lang="en">
       <StoreProvider>
         <body className={inter.className}>
-          <PreloaderProvider>{children}</PreloaderProvider>
+          <PreloaderProvider>
+            {children}
+            <SpeedInsights />
+          </PreloaderProvider>
         </body>
       </StoreProvider>
     </html>

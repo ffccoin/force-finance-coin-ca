@@ -15,6 +15,7 @@
     "@tsparticles/engine": "^3.2.1",
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.2.1",
+    "@vercel/speed-insights": "^1.0.10",
     "apexcharts": "^3.46.0",
     "axios": "^1.6.7",
     "debug": "^4.3.4",
