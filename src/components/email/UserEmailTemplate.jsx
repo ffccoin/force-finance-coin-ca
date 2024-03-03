@@ -1,4 +1,4 @@
-export const UserEmailTemplate = (name, selectedOption) => (
+export const UserEmailTemplate = ({name, selectedOption}) => (
   <div>
     <p>Subject: {selectedOption}</p>
     <p>Customer Name: Dear {name}</p>
